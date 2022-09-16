@@ -1502,6 +1502,28 @@ input, select, textarea {
 		}
 
 /* Main */
+	.grid-container {
+		display:grid;
+		grid-template-columns: repeat(1fr);
+		grid-auto-columns: minmax(185px, 185px);
+		grid-auto-rows: minmax(100px, auto);
+		grid-gap: 4px;
+	}
+	/*I can't figure out how to get rid of the dotted underline on the App Store Links, so...I'll hopefully figure it out eventually? a:link decoration:none doesn't work */
+	
+	.columnA img{
+		width: 100%;
+		height: 100%;
+		object-fit:fill;
+	}
+	.columnB {
+		grid-column-start: 2;
+		grid-column-end: 4;
+	}
+	.columnB img{
+		width: 100px;
+		height: 60px;
+	}
 
 	#main {
 		-moz-flex-grow: 1;
